@@ -1,16 +1,16 @@
-# React + Vite
+# Introduction to GitHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
 
-Currently, two official plugins are available:
+Hey @Madhu-yadav777!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
 
-## React Compiler
+Remember, it's self-paced so feel free to take a break! ☕️
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/Madhu-yadav777/skills-introduction-to-github/issues/1)
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+
