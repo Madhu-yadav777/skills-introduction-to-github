@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <pattern id="g3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(10,10,10,0.07)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#efebe3"/>
+  <rect width="1200" height="675" fill="url(#g3)"/>
+
+  <text x="60" y="70" font-family="monospace" font-size="15" letter-spacing="4" fill="#7a8b2d">INTERACTIVE DASHBOARD · POWER BI</text>
+  <rect x="60" y="92" width="80" height="4" fill="#0a0a0a"/>
+
+  <!-- slicer bar -->
+  <rect x="60" y="130" width="1080" height="54" rx="14" fill="#e7e2d5" stroke="rgba(10,10,10,0.15)"/>
+  <g font-family="monospace" font-size="12" fill="#5c5749">
+    <rect x="82" y="144" width="120" height="26" rx="13" fill="#0a0a0a"/>
+    <text x="102" y="161" fill="#efebe3">FY 2025-26 ▾</text>
+    <rect x="216" y="144" width="110" height="26" rx="13" fill="none" stroke="rgba(10,10,10,0.3)"/>
+    <text x="236" y="161">REGION ▾</text>
+    <rect x="340" y="144" width="110" height="26" rx="13" fill="none" stroke="rgba(10,10,10,0.3)"/>
+    <text x="360" y="161">CATEGORY ▾</text>
+    <circle cx="1100" cy="157" r="9" fill="#a9bc4a"/>
+  </g>
+
+  <!-- KPI cards -->
+  <g>
+    <rect x="60" y="210" width="250" height="120" rx="14" fill="#111110"/>
+    <text x="86" y="244" font-family="monospace" font-size="11" letter-spacing="2" fill="rgba(239,235,227,0.5)">TOTAL REVENUE</text>
+    <text x="86" y="292" font-family="monospace" font-size="36" font-weight="bold" fill="#efebe3">₹84.6L</text>
+    <text x="230" y="292" font-family="monospace" font-size="15" fill="#a9bc4a">+18%</text>
+
+    <rect x="330" y="210" width="250" height="120" rx="14" fill="#e7e2d5" stroke="rgba(10,10,10,0.15)"/>
+    <text x="356" y="244" font-family="monospace" font-size="11" letter-spacing="2" fill="#918b7a">CUSTOMERS</text>
+    <text x="356" y="292" font-family="monospace" font-size="36" font-weight="bold" fill="#0a0a0a">3,214</text>
+    <text x="490" y="292" font-family="monospace" font-size="15" fill="#7a8b2d">+9%</text>
+
+    <rect x="600" y="210" width="250" height="120" rx="14" fill="#e7e2d5" stroke="rgba(10,10,10,0.15)"/>
+    <text x="626" y="244" font-family="monospace" font-size="11" letter-spacing="2" fill="#918b7a">AVG ORDER VALUE</text>
+    <text x="626" y="292" font-family="monospace" font-size="36" font-weight="bold" fill="#0a0a0a">₹6,240</text>
+    <text x="782" y="292" font-family="monospace" font-size="15" fill="#e05a4e">-2%</text>
+
+    <rect x="870" y="210" width="270" height="120" rx="14" fill="#e7e2d5" stroke="rgba(10,10,10,0.15)"/>
+    <text x="896" y="244" font-family="monospace" font-size="11" letter-spacing="2" fill="#918b7a">GROWTH (DAX)</text>
+    <text x="896" y="292" font-family="monospace" font-size="36" font-weight="bold" fill="#0a0a0a">1.18x</text>
+  </g>
+
+  <!-- bar chart -->
+  <rect x="60" y="355" width="520" height="245" rx="14" fill="#e7e2d5" stroke="rgba(10,10,10,0.15)"/>
+  <text x="86" y="390" font-family="monospace" font-size="12" letter-spacing="3" fill="#5c5749">REVENUE BY CATEGORY</text>
+  <g>
+    <rect x="120" y="420" width="52" height="140" rx="6" fill="#0a0a0a"/>
+    <rect x="205" y="460" width="52" height="100" rx="6" fill="#7a8b2d"/>
+    <rect x="290" y="400" width="52" height="160" rx="6" fill="#a9bc4a"/>
+    <rect x="375" y="490" width="52" height="70" rx="6" fill="#0a0a0a" opacity="0.55"/>
+    <rect x="460" y="440" width="52" height="120" rx="6" fill="#7a8b2d" opacity="0.75"/>
+  </g>
+  <g font-family="monospace" font-size="11" fill="#918b7a">
+    <text x="122" y="580">LAMP</text><text x="204" y="580">CHAIR</text><text x="280" y="580">TABLE</text><text x="356" y="580">SHELF</text><text x="446" y="580">SOFA</text>
+  </g>
+
+  <!-- line chart -->
+  <rect x="600" y="355" width="330" height="245" rx="14" fill="#e7e2d5" stroke="rgba(10,10,10,0.15)"/>
+  <text x="626" y="390" font-family="monospace" font-size="12" letter-spacing="3" fill="#5c5749">REVENUE TREND</text>
+  <polyline points="630,560 680,530 730,545 780,480 830,505 880,440 910,455"
+    fill="none" stroke="#0a0a0a" stroke-width="2.5"/>
+  <polyline points="630,560 680,545 730,550 780,510 830,520 880,470 910,478"
+    fill="none" stroke="#a9bc4a" stroke-width="2" stroke-dasharray="6 5"/>
+  <circle cx="880" cy="440" r="5" fill="#7a8b2d"/>
+
+  <!-- donut -->
+  <rect x="950" y="355" width="190" height="245" rx="14" fill="#e7e2d5" stroke="rgba(10,10,10,0.15)"/>
+  <text x="976" y="390" font-family="monospace" font-size="12" letter-spacing="3" fill="#5c5749">REGION SPLIT</text>
+  <circle cx="1045" cy="480" r="62" fill="none" stroke="#0a0a0a" stroke-width="26" stroke-dasharray="190 200" transform="rotate(-90 1045 480)"/>
+  <circle cx="1045" cy="480" r="62" fill="none" stroke="#a9bc4a" stroke-width="26" stroke-dasharray="120 270" stroke-dashoffset="-195" transform="rotate(-90 1045 480)"/>
+  <circle cx="1045" cy="480" r="62" fill="none" stroke="#7a8b2d" stroke-width="26" stroke-dasharray="80 310" stroke-dashoffset="-318" transform="rotate(-90 1045 480)"/>
+  <text x="1045" y="486" font-family="monospace" font-size="14" font-weight="bold" fill="#0a0a0a" text-anchor="middle">4</text>
+
+  <g font-family="monospace" font-size="12" letter-spacing="2">
+    <rect x="60" y="622" width="100" height="30" rx="15" fill="none" stroke="rgba(10,10,10,0.3)"/>
+    <text x="78" y="642" fill="#0a0a0a">POWER BI</text>
+    <rect x="175" y="622" width="130" height="30" rx="15" fill="#7a8b2d"/>
+    <text x="193" y="642" fill="#efebe3">DATA ANALYSIS</text>
+    <rect x="320" y="622" width="170" height="30" rx="15" fill="none" stroke="rgba(10,10,10,0.3)"/>
+    <text x="338" y="642" fill="#0a0a0a">DATA VISUALIZATION</text>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(10,10,10,0.07)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#efebe3"/>
+  <rect width="1200" height="675" fill="url(#g)"/>
+
+  <!-- header label -->
+  <text x="60" y="70" font-family="monospace" font-size="15" letter-spacing="4" fill="#7a8b2d">MULTIMODAL DETECTION · FRAME 0427</text>
+  <rect x="60" y="92" width="80" height="4" fill="#0a0a0a"/>
+
+  <!-- face scan panel -->
+  <rect x="60" y="130" width="380" height="440" rx="18" fill="#e7e2d5" stroke="rgba(10,10,10,0.15)"/>
+  <text x="85" y="165" font-family="monospace" font-size="12" letter-spacing="3" fill="#5c5749">VISUAL · EFFICIENTNET-B2</text>
+  <!-- face grid -->
+  <g stroke="rgba(10,10,10,0.25)" stroke-width="1">
+    <rect x="130" y="200" width="240" height="300" rx="60" fill="none" stroke="#0a0a0a" stroke-width="2"/>
+  </g>
+  <!-- detection cells -->
+  <g>
+    <rect x="160" y="240" width="44" height="44" fill="rgba(169,188,74,0.35)" stroke="#7a8b2d"/>
+    <rect x="296" y="240" width="44" height="44" fill="rgba(169,188,74,0.35)" stroke="#7a8b2d"/>
+    <rect x="204" y="316" width="102" height="40" fill="rgba(169,188,74,0.5)" stroke="#7a8b2d"/>
+    <rect x="186" y="404" width="138" height="34" fill="rgba(169,188,74,0.35)" stroke="#7a8b2d"/>
+  </g>
+  <!-- scan line -->
+  <line x1="130" y1="360" x2="370" y2="360" stroke="#7a8b2d" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="130" y="354" width="10" height="12" fill="#7a8b2d"/>
+
+  <!-- temporal panel -->
+  <rect x="470" y="130" width="340" height="260" rx="18" fill="#e7e2d5" stroke="rgba(10,10,10,0.15)"/>
+  <text x="495" y="165" font-family="monospace" font-size="12" letter-spacing="3" fill="#5c5749">TEMPORAL · BI-LSTM</text>
+  <polyline points="495,330 530,310 560,325 595,270 630,295 665,240 700,265 735,215 770,245 805,200"
+    fill="none" stroke="#0a0a0a" stroke-width="2.5"/>
+  <polyline points="495,345 530,332 560,340 595,300 630,318 665,278 700,300 735,255 770,282 805,238"
+    fill="none" stroke="#7a8b2d" stroke-width="2" stroke-dasharray="5 4"/>
+  <circle cx="665" cy="240" r="5" fill="#7a8b2d"/>
+  <circle cx="805" cy="200" r="5" fill="#0a0a0a"/>
+
+  <!-- audio panel -->
+  <rect x="830" y="130" width="310" height="260" rx="18" fill="#e7e2d5" stroke="rgba(10,10,10,0.15)"/>
+  <text x="855" y="165" font-family="monospace" font-size="12" letter-spacing="3" fill="#5c5749">AUDIO · CRNN</text>
+  <g fill="#0a0a0a">
+    <rect x="860" y="290" width="10" height="40" rx="3"/>
+    <rect x="880" y="260" width="10" height="70" rx="3"/>
+    <rect x="900" y="300" width="10" height="50" rx="3" fill="#7a8b2d"/>
+    <rect x="920" y="240" width="10" height="90" rx="3" fill="#7a8b2d"/>
+    <rect x="940" y="285" width="10" height="60" rx="3"/>
+    <rect x="960" y="225" width="10" height="105" rx="3" fill="#7a8b2d"/>
+    <rect x="980" y="270" width="10" height="75" rx="3"/>
+    <rect x="1000" y="250" width="10" height="95" rx="3" fill="#7a8b2d"/>
+    <rect x="1020" y="295" width="10" height="55" rx="3"/>
+    <rect x="1040" y="235" width="10" height="100" rx="3"/>
+    <rect x="1060" y="280" width="10" height="65" rx="3" fill="#7a8b2d"/>
+    <rect x="1080" y="255" width="10" height="90" rx="3"/>
+    <rect x="1100" y="295" width="10" height="55" rx="3" fill="#7a8b2d"/>
+  </g>
+
+  <!-- fusion bar -->
+  <rect x="470" y="420" width="670" height="150" rx="18" fill="#111110"/>
+  <text x="500" y="458" font-family="monospace" font-size="12" letter-spacing="3" fill="rgba(239,235,227,0.55)">CONTRASTIVE TRIPLET LOSS · FUSION</text>
+  <rect x="500" y="480" width="560" height="14" rx="7" fill="rgba(239,235,227,0.15)"/>
+  <rect x="500" y="480" width="522" height="14" rx="7" fill="#a9bc4a"/>
+  <rect x="1022" y="480" width="38" height="14" rx="7" fill="#e05a4e"/>
+  <text x="500" y="535" font-family="monospace" font-size="26" font-weight="bold" fill="#efebe3">MANIPULATION SCORE</text>
+  <text x="1060" y="535" font-family="monospace" font-size="26" font-weight="bold" fill="#a9bc4a">93.2%</text>
+  <text x="500" y="558" font-family="monospace" font-size="11" fill="rgba(239,235,227,0.4)">DATASETS: FACEFORENSICS++ · FAKEAVCELEB</text>
+
+  <!-- footer chips -->
+  <g font-family="monospace" font-size="12" letter-spacing="2">
+    <rect x="60" y="600" width="150" height="30" rx="15" fill="none" stroke="rgba(10,10,10,0.3)"/>
+    <text x="82" y="620" fill="#0a0a0a">EFFICIENTNET</text>
+    <rect x="225" y="600" width="110" height="30" rx="15" fill="none" stroke="rgba(10,10,10,0.3)"/>
+    <text x="247" y="620" fill="#0a0a0a">BI-LSTM</text>
+    <rect x="350" y="600" width="130" height="30" rx="15" fill="none" stroke="rgba(10,10,10,0.3)"/>
+    <text x="372" y="620" fill="#0a0a0a">AUDIO-CRNN</text>
+    <rect x="495" y="600" width="90" height="30" rx="15" fill="#7a8b2d"/>
+    <text x="512" y="620" fill="#efebe3">PYTHON</text>
+  </g>
+</svg>
