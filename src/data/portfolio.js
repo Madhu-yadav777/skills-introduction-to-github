@@ -6,17 +6,17 @@
 export const profile = {
   name: "Madhumitha V",
   firstName: "Madhumitha",
-  role: "Computer Science & Business Systems Graduate",
+  role: "B.tech Computer Science and Business Systems",
   tagline: "Software development · Data · AI/ML",
   intro:
-    "I'm a B.Tech CSBS graduate with hands-on experience in Python, Java, SQL, Power BI and Machine Learning. I enjoy software development, data analysis, and building useful digital products — from deepfake detection research to interactive dashboards.",
+    "I'm a B.Tech Computer Science and Business Systems graduate with hands-on experience in Python, Java, SQL, Power BI and Machine Learning. I enjoy software development, data analysis, and building useful digital products — from deepfake detection research to interactive dashboards.",
   location: "Hosur, Tamil Nadu, India",
   phone: "+91 7604942266",
   email: "vmadhuyadav927@gmail.com",
   resumeUrl: "/resume.pdf",
   photo: "/profile.jpg",
   socials: {
-    github: "https://github.com/yourusername", // TODO: replace with your GitHub
+    github: "https://github.com/Madhu-yadav777",
     linkedin: "https://www.linkedin.com/in/madhu-mitha-v-548a32293",
   },
 };

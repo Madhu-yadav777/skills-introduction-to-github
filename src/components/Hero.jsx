@@ -76,38 +76,29 @@ export default function Hero() {
         style={{ background: "radial-gradient(circle, #ff7a59 0%, transparent 65%)", transform: "translate(" + parallax.x + "px," + parallax.y + "px)" }}
       />
 
-      {/* faint grid */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.35]"
-        style={{
-          backgroundImage: "linear-gradient(#111111 1px, transparent 1px), linear-gradient(90deg, #111111 1px, transparent 1px)",
-          backgroundSize: "72px 72px",
-          maskImage: "radial-gradient(ellipse 90% 70% at 50% 40%, black 30%, transparent 75%)",
-          WebkitMaskImage: "radial-gradient(ellipse 90% 70% at 50% 40%, black 30%, transparent 75%)",
-        }}
-      />
-
       <div className="relative z-10 mx-auto w-full max-w-7xl">
         <div className="grid items-center gap-14 lg:grid-cols-[1.4fr_1fr]">
           {/* Left: copy */}
           <div>
-            <p
-              className="font-mono mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-text-muted opacity-0"
-              style={{ animation: "fade-in 0.8s ease 0.15s forwards" }}
-            >
-              <span className="inline-block h-1.5 w-1.5 animate-[glow-pulse_2.5s_ease-in-out_infinite] rounded-full bg-accent-soft" />
-              Available for internships &amp; opportunities
-            </p>
-
-            <h1 className="font-display text-[clamp(2.8rem,8vw,6.5rem)] font-bold leading-[1.02] tracking-tight text-text">
-              <SplitText text="Hi, I'm" delay={0.3} className="block" />
-              <span
-                className="text-gradient block whitespace-nowrap pb-2 text-[clamp(2.4rem,6vw,5.4rem)] opacity-0"
-                style={{ animation: "fade-up 0.9s cubic-bezier(0.16,1,0.3,1) 0.55s forwards" }}
+            <div className="relative mb-8">
+              <p
+                className="font-mono mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-text-muted opacity-0"
+                style={{ animation: "fade-in 0.8s ease 0.15s forwards" }}
               >
-                {profile.name}
-              </span>
-            </h1>
+                <span className="inline-block h-1.5 w-1.5 animate-[glow-pulse_2.5s_ease-in-out_infinite] rounded-full bg-accent-soft" />
+                Available for internships &amp; opportunities
+              </p>
+
+              <h1 className="font-display text-[clamp(2.8rem,8vw,6.5rem)] font-bold leading-[1.02] tracking-tight text-text">
+                <SplitText text="Hi, I'm" delay={0.3} className="block" />
+                <span
+                  className="text-gradient block whitespace-nowrap pb-2 text-[clamp(2.4rem,6vw,5.4rem)] opacity-0"
+                  style={{ animation: "fade-up 0.9s cubic-bezier(0.16,1,0.3,1) 0.55s forwards" }}
+                >
+                  {profile.name}
+                </span>
+              </h1>
+            </div>
 
             <p
               className="font-display mt-4 text-lg font-medium text-text-muted opacity-0 md:text-xl"
@@ -122,6 +113,15 @@ export default function Hero() {
             >
               {profile.intro}
             </p>
+
+            <div className="mb-8 flex justify-center md:hidden">
+              <img
+                src={profile.photo}
+                alt={profile.name}
+                className="h-44 w-44 rounded-full border-4 border-accent-soft object-cover opacity-0 grayscale-[35%] shadow-lg transition-all duration-700 hover:grayscale-0"
+                style={{ animation: "fade-in 0.8s ease 0.3s forwards, float-photo 5s ease-in-out 1.1s infinite" }}
+              />
+            </div>
 
             <div
               className="mt-10 flex flex-wrap items-center gap-4 opacity-0"
@@ -166,29 +166,25 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: photo */}
+          {/* Right: large portrait photo */}
           <div
-            className="relative mx-auto hidden w-full max-w-sm opacity-0 lg:block"
-            style={{ animation: "scale-in 1s cubic-bezier(0.16,1,0.3,1) 0.8s forwards" }}
+            className="relative hidden lg:flex lg:justify-center lg:items-center"
+            style={{ transform: "translate(" + (parallax.x * 0.4) + "px," + (parallax.y * 0.4) + "px)", transition: "transform 0.3s ease-out" }}
           >
             <div
               className="relative"
-              style={{ transform: "translate(" + (parallax.x * 0.6) + "px," + (parallax.y * 0.6) + "px)", transition: "transform 0.3s ease-out" }}
+              style={{ transform: "perspective(900px) rotateX(" + (parallax.y * -0.4) + "deg) rotateY(" + (parallax.x * 0.5) + "deg)", transition: "transform 0.3s ease-out" }}
             >
-              <div className="absolute -inset-px rounded-3xl bg-gradient-to-b from-ink/20 via-ink/5 to-transparent" />
-              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-bg/12 bg-bg-soft">
-                <img
-                  src={profile.photo}
-                  alt={profile.name}
-                  className="h-full w-full object-cover grayscale-[35%] transition-all duration-700 hover:grayscale-0"
-                  onError={(e) => { e.currentTarget.style.display = "none"; }}
-                />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
-              </div>
-              <div className="glass absolute -bottom-4 -left-4 rounded-2xl px-5 py-4">
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-text-dim">Based in</p>
-                <p className="font-display mt-0.5 text-sm font-semibold text-text">{profile.location}</p>
-              </div>
+              <div
+                className="absolute -inset-3 rounded-full bg-gradient-to-b from-accent-soft/40 via-accent/20 to-transparent blur-md"
+                style={{ animation: "float-photo 5s ease-in-out infinite" }}
+              />
+              <img
+                src={profile.photo}
+                alt={profile.name}
+                className="relative h-[320px] w-[320px] rounded-full border-4 border-accent-soft object-cover opacity-0 grayscale-[35%] shadow-2xl transition-all duration-700 hover:grayscale-0"
+                style={{ animation: "fade-in 0.8s ease 0.3s forwards, float-photo 5s ease-in-out 1.1s infinite" }}
+              />
             </div>
           </div>
         </div>
