@@ -71,14 +71,7 @@ export default function Skills() {
                 <h3 className="font-display text-lg font-semibold text-text">{skill.name}</h3>
                 <span className="mt-1.5 h-2 w-2 rounded-full bg-accent" />
               </div>
-              <p className="font-mono mt-2 text-[10px] uppercase tracking-[0.25em] text-text-dim">{skill.category}</p>
-              <div className="mt-4 h-1 w-full overflow-hidden rounded-full bg-bg/10">
-                <div
-                  className="h-full rounded-full bg-accent transition-all duration-700 ease-out"
-                  style={{ width: skill.level + "%" }}
-                />
-              </div>
-              <p className="font-mono mt-3 text-[11px] text-text-dim">{skill.level}% comfortable</p>
+<p className="font-mono mt-2 text-[10px] uppercase tracking-[0.25em] text-text-dim">{skill.category}</p>
             </div>
           ))}
         </div>

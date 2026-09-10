@@ -81,14 +81,6 @@ export default function Hero() {
           {/* Left: copy */}
           <div>
             <div className="relative mb-8">
-              <p
-                className="font-mono mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-text-muted opacity-0"
-                style={{ animation: "fade-in 0.8s ease 0.15s forwards" }}
-              >
-                <span className="inline-block h-1.5 w-1.5 animate-[glow-pulse_2.5s_ease-in-out_infinite] rounded-full bg-accent-soft" />
-                Available for internships &amp; opportunities
-              </p>
-
               <h1 className="font-display text-[clamp(2.8rem,8vw,6.5rem)] font-bold leading-[1.02] tracking-tight text-text">
                 <SplitText text="Hi, I'm" delay={0.3} className="block" />
                 <span
