@@ -300,7 +300,7 @@ def main():
     with st.sidebar:
         st.markdown("## Controls")
         ticker = st.text_input("Ticker", "AAPL", help="Example: AAPL, MSFT, TSLA, NVDA").upper().strip()
-        quick_range = st.selectbox("Quick range", ["1M", "3M", "6M", "1Y", "5Y"])
+        quick_range = st.selectbox("Quick range", ["1M", "3M", "6M", "1Y", "5Y"], index=2)
         today = dt.date.today()
         ranges = {
             "1M": dt.timedelta(days=31),
@@ -398,7 +398,7 @@ def main():
                     st.plotly_chart(make_model_chart(y_test, predictions), use_container_width=True)
                     st.info("Model uses Day, 5-day moving average, 20-day moving average, and RSI to estimate price direction.")
             else:
-                st.warning("Not enough data for the ML model. Choose a longer date range.")
+                st.warning("⚠️ Not enough data for the ML model. Please select a longer date range (at least 3 months recommended).")
 
             st.markdown("## Download Data")
             csv = df.reset_index().to_csv(index=False)
