@@ -37,10 +37,16 @@ st.markdown(
     [data-testid="stSidebar"] { background: #ffffff; border-right: 1px solid var(--card-border); }
     h1, h2, h3, h4 { color: var(--text); letter-spacing: .01em; }
     .stMarkdown { color: var(--muted); }
-    .stMetric { background: var(--card); border: 1px solid var(--card-border); border-radius: 0.9rem; padding: 1rem; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05); }
+    .stMetric { background: var(--card); border: 2px solid #cbd5e1; border-radius: 0.9rem; padding: 1rem; box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12); }
     .stMetric > label { color: var(--muted); font-weight: 600; }
     .stMetric > div { color: var(--text); font-weight: 700; }
     .glass-card {
+        background: #ffffff;
+        border: 2px solid #cbd5e1;
+        border-radius: 1rem;
+        padding: 1.25rem;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.14);
+        backdrop-filter: none;
         background: var(--card);
         border: 1px solid var(--card-border);
         border-radius: 1rem;
